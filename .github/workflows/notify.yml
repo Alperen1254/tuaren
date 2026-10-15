@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: node scripts/notify.mjs
+      - run: node notify.mjs
         env:
           FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           COUPLE_CODE: ${{ secrets.COUPLE_CODE }}
